@@ -1,0 +1,49 @@
+body{
+    background: #f9f9f9;
+}
+.img_h100{
+    height: 100%;
+}
+.nav{
+    background: #3d3d3d;
+}
+.layui-nav{
+    background: #3d3d3d;
+
+}
+.layui-nav .layui-nav-item a{
+    color:#fff;
+}
+.layui-nav .layui-nav-item a:hover{
+    color:#cf101c;
+}
+.layui-nav .layui-this:after, .layui-nav-bar, .layui-nav-tree .layui-nav-itemed:after{
+    background-color: #cf101c;
+}
+#top{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right:80px ;
+    bottom: 80px;
+    background-color: #1d6168;
+    padding: 1px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 3px;
+    -webkit-transition: all .3s;
+    display: none;
+}
+#top i{
+    color:#fff;
+    font-size:50px;
+    text-align: center;
+    line-height: 50px;
+}
+#top:hover{
+    background-color: #104b51;
+    text-decoration: none;
+}
+#top a:hover{
+    text-decoration: none;
+}

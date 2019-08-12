@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="icon" href="icon/zhite_icon.png">
+    <link rel="stylesheet" href="layui/css/layui.css">
+    <link rel="stylesheet" href="css/cssAll.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body style="height: 10000px;">
+<div class="header ">
+    <div class="logo layui-container">
+        <a href="javaScript:;"><img class="img_h100" src="icon/logo.png" alt="">
+            <small>山东知特商务服务有限公司</small>
+        </a>
+    </div>
+    <div class="nav">
+        <ul class="layui-nav layui-container">
+            <li class="layui-nav-item layui-this"><a href="#:;">首页</a></li>
+            <li class="layui-nav-item"><a href="#:;">公司简介</a></li>
+            <li class="layui-nav-item"><a href="#:;">业务范畴</a></li>
+            <li class="layui-nav-item"><a href="#:;">联系我们</a></li>
+        </ul>
+    </div>
+    <div class="layui-carousel" id="test1">
+        <div carousel-item>
+            <div><img src="images/row.jpg" alt=""></div>
+            <div><img src="images/tab.jpg" alt=""></div>
+            <div><img src="images/row.jpg" alt=""></div>
+            <div><img src="images/tab.jpg" alt=""></div>
+        </div>
+    </div>
+</div>
+<!--<div class="top" id="top">
+    <a href="javaScript:;">
+        <i class="layui-icon layui-icon-top "></i>
+        &lt;!&ndash;<img src="icon/top.png" alt="">&ndash;&gt;
+    </a>
+</div>-->
+<div id="top">
+
+</div>
+</body>
+</html>
+<script src="js/jquery.min.js"></script>
+<script src="js/top.js"></script>
+<script src="layui/layui.all.js"></script>
+<script>
+    layui.use('element', function () {
+        var element = layui.element;
+    });
+    layui.use('carousel', function () {
+        var carousel = layui.carousel;
+        //建造实例
+        carousel.render({
+            elem: '#test1'
+            , width: '100%' //设置容器宽度
+            , height: '480'
+            , anim: 'fade'
+            //,arrow: 'always' //始终显示箭头
+            //,anim: 'updown' //切换动画方式
+        });
+    });
+</script>
