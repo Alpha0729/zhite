@@ -1,9 +1,59 @@
-.header .logo{
-    height: 80px;
-    font-size: 30px;
-    background: #fff;
-    padding: 10px 0;
+.about .about_content p{
+    font-size: 16px;
+    line-height: 24px;
+    text-indent: 2em;
 }
-.header .nav{
+
+.goodness{
 
 }
+.goodness ul li{
+    margin-top: 30px;
+}
+.goodness ul li i{
+    font-size: 80px;
+    text-align: center;
+    color:#cf101c;
+}
+.goodness ul li h3{
+   margin-top: 15px;
+}
+.team .layui-col-md4{
+    padding-right: 20px;
+}
+.team .layui-col-md6{
+    padding-left: 10px;
+}
+.team .layui-col-md6 span{
+    display: inline-block;
+}
+.team .layui-col-md6 p{
+    line-height: 26px;
+    text-indent: 2em;
+    margin-top: 10px;
+    color:#333;
+}
+.case .case_content li {
+    margin-top: 30px;
+}
+.case .case_content li div{
+    padding:0 10px;
+    color:#333
+}
+.case .case_content li div p{
+    margin-top: 10px;
+    color:#666;
+    line-height: 26px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
