@@ -36,6 +36,9 @@
 .case .case_content li {
     margin-top: 30px;
 }
+.case .case_content li img{
+    padding: 20px 10px;
+}
 .case .case_content li div{
     padding:0 10px;
     color:#333
