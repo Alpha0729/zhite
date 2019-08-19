@@ -33,18 +33,22 @@
     margin-top: 10px;
     color:#333;
 }
+.case{
+    margin: 30px 0;
+}
 .case .case_content li {
     margin-top: 30px;
 }
 .case .case_content li img{
-    padding: 20px 10px;
+
+    width: 100%;
 }
 .case .case_content li div{
     padding:0 10px;
     color:#333
 }
 .case .case_content li div p{
-    margin-top: 10px;
+    margin: 10px 0;
     color:#666;
     line-height: 26px;
 }

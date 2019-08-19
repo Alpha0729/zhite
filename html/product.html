@@ -11,7 +11,9 @@
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/cssAll.css">
+    <link rel="stylesheet" href="../css/hover.css">
     <link rel="stylesheet" href="../css/product.css">
+    <link rel="stylesheet" href="../css/media.css">
 </head>
 <body>
 <div class="header ">
@@ -22,19 +24,19 @@
     </h1>
     <div class="nav">
         <ul class="layui-nav layui-container layui-hide-xs">
-            <li class="layui-nav-item layui-this"><a href="../index.html">首页</a></li>
-            <li class="layui-nav-item"><a href="#:;">公司简介</a></li>
-            <li class="layui-nav-item"><a href="#:;">业务范畴</a></li>
-            <li class="layui-nav-item"><a href="#:;">联系我们</a></li>
+            <li class="layui-nav-item "><a href="../index.html">首页</a></li>
+            <li class="layui-nav-item"><a href="about.html">公司简介</a></li>
+            <li class="layui-nav-item layui-this"><a href="product.html">业务范畴</a></li>
+            <li class="layui-nav-item"><a href="contact.html">联系我们</a></li>
         </ul>
         <ul class="layui-nav layui-container layui-hide-sm layui-hide-md">
             <li class="layui-nav-item layui-this"><a href="../index.html">首页</a></li>
-            <li class="layui-nav-item"><a href="#:;">公司简介</a></li>
+            <li class="layui-nav-item"><a href="about.html">公司简介</a></li>
             <li class="layui-nav-item">
                 <a href="#:;">业务范畴</a>
                 <ol class="layui-nav-child">
-                    <li><a href="#:;">业务范畴</a></li>
-                    <li><a href="#:;">联系我们</a></li>
+                    <li><a href="product.html layui-this">业务范畴</a></li>
+                    <li><a href="contact.html ">联系我们</a></li>
                 </ol>
             </li>
         </ul>
@@ -43,20 +45,91 @@
 <div class="banner ">
     <img class="img_100" src="../images/banner_zt2.jpg" alt="">
 </div>
-<div class="content" style="">
+<div class="content layui-hide-xs" style="">
        <div class="layui-container">
-           <ul>
-               <li class="layui-row">
-                   <img class="layui-col-md6" src="../images/li_img.jpg" alt="">
-                   <div class="layui-col-md6">
-                       <h2>不良资产处置</h2>
+           <ul class="team padding_tb30">
+               <li class="layui-row team_body">
+                   <div class="layui-col-md4 layui-col-sm4 team_img">
+                       <img src="../images/ren.jpg" alt="">
+                   </div>
+                   <div class="layui-col-md6 team_content team_content_left">
+                       <h2><span>产品展示</span></h2>
                        <p>中京信联-拥有受银行、金融机构委外、民间债权委外进行催收的资质，同时设立线上全国债权登记系统，债权人可免费上传债权债务信息。旗下“E商城”将无法通过正常处置方式解决的债权进行变现。线下整合专业的资产管理公司、不良资产处置服务公司、律师事务所等债权处置机构，特有线上线下相结合的模式，使债权快速、安全的处置；同时转让、置换模式同步进行，提供一站式、多途径、高效率处置渠道！</p>
+                   </div>
+               </li>
+               <li class="layui-row team_body">
+                   <div class="layui-col-md6 team_content team_content_right">
+                       <h2><span>运营案例</span></h2>
+                       <p>中京信联-拥有受银行、金融机构委外、民间债权委外进行催收的资质，同时设立线上全国债权登记系统，债权人可免费上传债权债务信息。旗下“E商城”将无法通过正常处置方式解决的债权进行变现。线下整合专业的资产管理公司、不良资产处置服务公司、律师事务所等债权处置机构，特有线上线下相结合的模式，使债权快速、安全的处置；同时转让、置换模式同步进行，提供一站式、多途径、高效率处置渠道！</p>
+                   </div>
+                   <div class="layui-col-md4 layui-col-sm4 team_img">
+                       <img src="../images/ren.jpg" alt="">
+                   </div>
+               </li>
+               <li class="layui-row team_body">
+                   <div class="layui-col-md4 layui-col-sm4 team_img">
+                       <img src="../images/ren.jpg" alt="">
+                   </div>
+                   <div class="layui-col-md6 team_content team_content_left">
+                       <h2><span>运营案例</span></h2>
+                       <p>中京信联-拥有受银行、金融机构委外、民间债权委外进行催收的资质，同时设立线上全国债权登记系统，债权人可免费上传债权债务信息。旗下“E商城”将无法通过正常处置方式解决的债权进行变现。线下整合专业的资产管理公司、不良资产处置服务公司、律师事务所等债权处置机构，特有线上线下相结合的模式，使债权快速、安全的处置；同时转让、置换模式同步进行，提供一站式、多途径、高效率处置渠道！</p>
+                   </div>
+               </li>
+               <li class="layui-row team_body">
+                   <div class="layui-col-md6 team_content team_content_right">
+                       <h2><span>运营案例</span></h2>
+                       <p>中京信联-拥有受银行、金融机构委外、民间债权委外进行催收的资质，同时设立线上全国债权登记系统，债权人可免费上传债权债务信息。旗下“E商城”将无法通过正常处置方式解决的债权进行变现。线下整合专业的资产管理公司、不良资产处置服务公司、律师事务所等债权处置机构，特有线上线下相结合的模式，使债权快速、安全的处置；同时转让、置换模式同步进行，提供一站式、多途径、高效率处置渠道！</p>
+                   </div>
+                   <div class="layui-col-md4 layui-col-sm4 team_img">
+                       <img src="../images/ren.jpg" alt="">
                    </div>
                </li>
            </ul>
        </div>
 </div>
-
+<div class="content layui-hide-sm layui-hide-md" style="">
+    <div class="layui-container">
+        <ul class="team padding_b30">
+            <li class="layui-row team_body active_margin0">
+                <div class="layui-col-md4 layui-col-sm4 team_img">
+                    <img src="../images/ren.jpg" alt="">
+                </div>
+                <div class="layui-col-md6 team_content team_content_left">
+                    <h2><span>产品展示</span></h2>
+                    <p>中京信联-拥有受银行、金融机构委外、民间债权委外进行催收的资质，同时设立线上全国债权登记系统，债权人可免费上传债权债务信息。旗下“E商城”将无法通过正常处置方式解决的债权进行变现。线下整合专业的资产管理公司、不良资产处置服务公司、律师事务所等债权处置机构，特有线上线下相结合的模式，使债权快速、安全的处置；同时转让、置换模式同步进行，提供一站式、多途径、高效率处置渠道！</p>
+                </div>
+            </li>
+            <li class="layui-row team_body">
+                <div class="layui-col-md4 layui-col-sm4 team_img">
+                    <img src="../images/ren.jpg" alt="">
+                </div>
+                <div class="layui-col-md6 team_content team_content_left">
+                    <h2><span>运营案例</span></h2>
+                    <p>中京信联-拥有受银行、金融机构委外、民间债权委外进行催收的资质，同时设立线上全国债权登记系统，债权人可免费上传债权债务信息。旗下“E商城”将无法通过正常处置方式解决的债权进行变现。线下整合专业的资产管理公司、不良资产处置服务公司、律师事务所等债权处置机构，特有线上线下相结合的模式，使债权快速、安全的处置；同时转让、置换模式同步进行，提供一站式、多途径、高效率处置渠道！</p>
+                </div>
+            </li>
+            <li class="layui-row team_body">
+                <div class="layui-col-md4 layui-col-sm4 team_img">
+                    <img src="../images/ren.jpg" alt="">
+                </div>
+                <div class="layui-col-md6 team_content team_content_left">
+                    <h2><span>运营案例</span></h2>
+                    <p>中京信联-拥有受银行、金融机构委外、民间债权委外进行催收的资质，同时设立线上全国债权登记系统，债权人可免费上传债权债务信息。旗下“E商城”将无法通过正常处置方式解决的债权进行变现。线下整合专业的资产管理公司、不良资产处置服务公司、律师事务所等债权处置机构，特有线上线下相结合的模式，使债权快速、安全的处置；同时转让、置换模式同步进行，提供一站式、多途径、高效率处置渠道！</p>
+                </div>
+            </li>
+            <li class="layui-row team_body">
+                <div class="layui-col-md4 layui-col-sm4 team_img">
+                    <img src="../images/ren.jpg" alt="">
+                </div>
+                <div class="layui-col-md6 team_content team_content_left">
+                    <h2><span>运营案例</span></h2>
+                    <p>中京信联-拥有受银行、金融机构委外、民间债权委外进行催收的资质，同时设立线上全国债权登记系统，债权人可免费上传债权债务信息。旗下“E商城”将无法通过正常处置方式解决的债权进行变现。线下整合专业的资产管理公司、不良资产处置服务公司、律师事务所等债权处置机构，特有线上线下相结合的模式，使债权快速、安全的处置；同时转让、置换模式同步进行，提供一站式、多途径、高效率处置渠道！</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<hr>
 <div class="footer">
     <div class="layui-container">
         <div class="layui-row ">

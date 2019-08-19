@@ -65,6 +65,7 @@ body{
 .color_333{
     color:#666;
 }
+
 .margin_top5{
     margin-top:5px;
 }
@@ -117,15 +118,9 @@ body{
 }
 .case .case_content li div h2{
     transition: .3s all;
-    margin-top: 20px;
 }
-.case .case_content li div h2:hover{
-    color:#cf101c;
+#map{
+    height: 600px;
 }
-.layui-nav .layui-nav-child a{
-    color:#333;
-    background-color: #f1f1f1;
-}
-.layui-nav .layui-nav-child a:hover{
-    background-color: #ccc;
-}
+
+

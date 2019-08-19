@@ -1,0 +1,30 @@
+.team .team_body{
+    margin-top: 30px;
+}
+
+.team .team_content_left{
+    padding-left: 30px;:
+}
+.team .team_content_right{
+    padding-right: 30px;:
+}
+.team .team_content li{
+    padding-top: 30px;
+}
+.team .team_content h2 span{
+    color:#333;
+    display: inline-block;
+    border-left:4px solid #cf101c;
+    padding-left: 8px;
+    line-height: 100%;
+    font-size: 24px;
+}
+.team .team_content p{
+    color:#666;
+    margin-top: 20px;
+    line-height: 24px;
+    font-size: 16px;
+}
+
+
+

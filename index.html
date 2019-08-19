@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>山东知特商务服务有限公司,首页</title>
     <link rel="icon" href="icon/zhite_icon.png">
     <link rel="stylesheet" href="layui/css/layui.css">
@@ -9,7 +11,10 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/cssAll.css">
+    <link rel="stylesheet" href="css/hover.css">
+
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/media.css">
 </head>
 <body>
 <div class="header">
@@ -19,14 +24,25 @@
             </a>
     </h1>
     <div class="nav">
-        <ul class="layui-nav layui-container">
-            <li class="layui-nav-item layui-this"><a href="#:;">首页</a></li>
-            <li class="layui-nav-item"><a href="#:;">公司简介</a></li>
-            <li class="layui-nav-item"><a href="#:;">业务范畴</a></li>
-            <li class="layui-nav-item"><a href="#:;">联系我们</a></li>
+        <ul class="layui-nav layui-container layui-hide-xs">
+            <li class="layui-nav-item layui-this"><a href="./index.html">首页</a></li>
+            <li class="layui-nav-item"><a href="./html/about.html">公司简介</a></li>
+            <li class="layui-nav-item"><a href="./html/product.html">业务范畴</a></li>
+            <li class="layui-nav-item"><a href="./html/contact.html">联系我们</a></li>
+        </ul>
+        <ul class="layui-nav layui-container layui-hide-sm layui-hide-md">
+            <li class="layui-nav-item layui-this"><a href="./index.html">首页</a></li>
+            <li class="layui-nav-item"><a href="./html/about.html">公司简介</a></li>
+            <li class="layui-nav-item">
+                <a href="#:;">业务范畴</a>
+                <ol class="layui-nav-child">
+                    <li><a href="./html/product.html">业务范畴</a></li>
+                    <li><a href="./html/contact.html">联系我们</a></li>
+                </ol>
+            </li>
         </ul>
     </div>
-    <div class="layui-carousel" id="test1">
+    <div class="layui-carousel  layui-hide-xs" id="test1">
         <div carousel-item>
             <div><img src="images/row.jpg" alt=""></div>
             <div><img src="images/tab.jpg" alt=""></div>
@@ -130,34 +146,34 @@
             <p>我们期待与您的合作......</p>
         </div>
     </div>
-    <div class="case padding_tb30 layui-container">
+    <div class="case layui-container">
         <div class="text_c">
             <h2>合作运营案例</h2>
         </div>
         <ul class="case_content layui-row">
             <li class="layui-col-md6">
-                <a href="#:;"> <img class="layui-col-md6" src="images/lou.jpg" alt=""></a>
+                <a class="layui-col-md6" href="#:;"> <img src="images/lou.jpg" alt=""></a>
                 <div class="layui-col-md6">
                     <a href="#:;"> <h2>河北某某有限责任公司</h2></a>
                     <p>中京信联双品牌成立至今,全国140多家城市运营中心。打造全国最具有公信力金融资源整合平台为己任，秉承品质，效率，创新的经营理念！</p>
                 </div>
             </li>
             <li class="layui-col-md6">
-                <a href="#:;"> <img class="layui-col-md6" src="images/lou.jpg" alt=""></a>
+                <a class="layui-col-md6" href="#:;"> <img src="images/lou.jpg" alt=""></a>
                 <div class="layui-col-md6">
                     <a href="#:;"> <h2>河北某某有限责任公司</h2></a>
                     <p>中京信联双品牌成立至今,全国140多家城市运营中心。打造全国最具有公信力金融资源整合平台为己任，秉承品质，效率，创新的经营理念！</p>
                 </div>
             </li>
             <li class="layui-col-md6">
-                <a href="#:;"> <img class="layui-col-md6" src="images/lou.jpg" alt=""></a>
+                <a class="layui-col-md6" href="#:;"> <img src="images/lou.jpg" alt=""></a>
                 <div class="layui-col-md6">
                     <a href="#:;"> <h2>河北某某有限责任公司</h2></a>
                     <p>中京信联双品牌成立至今,全国140多家城市运营中心。打造全国最具有公信力金融资源整合平台为己任，秉承品质，效率，创新的经营理念！</p>
                 </div>
             </li>
             <li class="layui-col-md6">
-                <a href="#:;"> <img class="layui-col-md6" src="images/lou.jpg" alt=""></a>
+                <a class="layui-col-md6" href="#:;"> <img src="images/lou.jpg" alt=""></a>
                 <div class="layui-col-md6">
                     <a href="#:;"> <h2>河北某某有限责任公司</h2></a>
                     <p>中京信联双品牌成立至今,全国140多家城市运营中心。打造全国最具有公信力金融资源整合平台为己任，秉承品质，效率，创新的经营理念！</p>

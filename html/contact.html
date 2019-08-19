@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>关于知特商务服务有限公司</title>
+    <link rel="icon" href="../icon/zhite_icon.png">
+    <link rel="stylesheet" href="../layui/css/layui.css">
+    <link rel="stylesheet" href="../font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/cssAll.css">
+    <link rel="stylesheet" href="../css/contact.css">
+
+    <!--媒体查询-->
+    <link rel="stylesheet" href="../css/media.css">
+<!--高德地图入口-->
+    <link rel="stylesheet" href="http://cache.amap.com/lbs/static/main1119.css"/>
+    <script src="http://webapi.amap.com/maps?v=1.4.5&key=09c7581c4ba13779ec5fdedad27f9de5"></script>
+    <script type="text/javascript" src="http://cache.amap.com/lbs/static/addToolbar.js"></script>
+</head>
+<body style="">
+<div class="header ">
+    <h1 class="logo layui-container layui-hide-xs">
+        <a href="javaScript:;"><img class="img_h100" src="../icon/logo.png" alt="">
+            <small>山东知特商务服务有限公司</small>
+        </a>
+    </h1>
+    <div class="nav">
+        <ul class="layui-nav layui-container layui-hide-xs">
+            <li class="layui-nav-item"><a href="../index.html">首页</a></li>
+            <li class="layui-nav-item"><a href="about.html">公司简介</a></li>
+            <li class="layui-nav-item"><a href="product.html">业务范畴</a></li>
+            <li class="layui-nav-item  layui-this"><a href="contact.html">联系我们</a></li>
+        </ul>
+        <ul class="layui-nav layui-container layui-hide-sm layui-hide-md">
+            <li class="layui-nav-item layui-this"><a href="../index.html">首页</a></li>
+            <li class="layui-nav-item"><a href="about.html">公司简介</a></li>
+            <li class="layui-nav-item">
+                <a href="#:;">业务范畴</a>
+                <ol class="layui-nav-child">
+                    <li><a href="product.html">业务范畴</a></li>
+                    <li class="layui-this"><a href="contact.html">联系我们</a></li>
+                </ol>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="banner ">
+    <img class="img_100" src="../images/banner_zt.jpg" alt="">
+</div>
+<div class="content padding_tb30" style="">
+    <div class="layui-container">
+        <div id="map"></div>
+    </div>
+
+    <div class="layui-row layui-container">
+        <div class="layui-row contact_body">
+            <div class="layui-col-xs12">
+                <div class="layui-col-md2 layui-col-xs4">
+                    <img class="img_100" src="../images/liu_er.png" alt="">
+                </div>
+                <div class="layui-col-md4 layui-col-xs8 contact_center">
+                    <p>
+                        地址：山东省济南市槐荫区西城西进时代中心A座604室 <br>
+                        官方电话：400-888-888 <br>
+                        负责人电话：400-888-888
+                    </p>
+                </div>
+            </div>
+            <div id="letter" class="layui-layer-wrap layui-col-md6 layui-col-md12" style="">
+                <form class="layui-form layui-form-pane layui-row" method="post" action="#:;">
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">姓名</label>
+                        <div class="layui-input-block">
+                            <input class="layui-input" name="row[online_name]" placeholder="请出入姓名" type="text">
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">电话</label>
+                        <div class="layui-input-block">
+                            <input type="text" name="row[online_phone]" required="" lay-verify="required|phone|number" placeholder="请输入电话" autocomplete="off" class="layui-input layui-form-danger" lay-reqtext="必填">
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">地址</label>
+                        <div class="layui-input-block">
+                            <input class="layui-input" name="row[online_address]" placeholder="请输入住址" type="text">
+                        </div>
+                    </div>
+                    <div class="layui-form-item layui-form-text">
+                        <label class="layui-form-label">备注</label>
+                        <div class="layui-input-block">
+                            <textarea class="layui-textarea" name="row[online_note]" placeholder="您有什么想对我们说的？"></textarea>
+                        </div>
+                    </div>
+                    <div class=" layui-bnt-container">
+                        <button class="layui-btn" sb="" lay-filter="'">提交</button>
+                        <!--<input class="layui-btn " type="submit">-->
+
+                        <!--<input class="layui-btn layui-col-md6" type="button" value="重置">-->
+                        <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="footer">
+    <div class="layui-container">
+        <div class="layui-row ">
+            <div class="layui-col-xs6 layui-hide-xs">
+                <h3>合作伙伴：</h3>
+                <ul class="margin_top10  ">
+                    <li class="layui-col-xs6 layui-col-md3 padding_tb10"><a href="#:;">万达普惠</a></li>
+                    <li class="layui-col-xs6 layui-col-md3 padding_tb10"><a href="#:;">万达普惠</a></li>
+                    <li class="layui-col-xs6 layui-col-md3 padding_tb10"><a href="#:;">万达普惠</a></li>
+                    <li class="layui-col-xs6 layui-col-md3 padding_tb10"><a href="#:;">万达普惠</a></li>
+                    <li class="layui-col-xs6 layui-col-md3 padding_tb10"><a href="#:;">万达普惠</a></li>
+                </ul>
+            </div>
+            <div class=" layui-col-md6">
+                <div class="margin_top20 layui-col-xs12">地址：山东省济南市槐荫区西城西进时代中心A座604室</div>
+                <div class="margin_top20 layui-col-xs12 layui-col-md6">官方电话：400-888-888</div>
+                <div class="margin_top20 layui-col-xs12 layui-col-md6">负责人电话：400-888-888</div>
+            </div>
+        </div>
+    </div>
+    <hr style="background:#666">
+    <div class="icp text_c margin_top10">
+        <div>©2019-2021 本网站有山东知特商务服务有限公司版权所有</div>
+        <div class="margin_top5">
+            <a href="http://beian.miit.gov.cn">冀ICP备19018194号-1</a>
+        </div>
+    </div>
+</div>
+
+<div id="top" class="layui-hide-xs">
+
+</div>
+</body>
+</html>
+<script src="../js/jquery.min.js"></script>
+<script src="../js/top.js"></script>
+<script src="../layui/layui.all.js"></script>
+<script src="../js/layui.js"></script>
+<script>
+    layui.use('element', function () {
+        var element = layui.element;
+    });
+</script>

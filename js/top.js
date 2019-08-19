@@ -73,4 +73,19 @@ window.onload = function () {
     $("#top").on('click', function () {
         setInter();
     });
+
+    var map = new AMap.Map('map', {
+        resizeEnable: true,
+        center: [116.893407,36.654852],
+        zoom: 13,
+    });
+    var marker = new AMap.Marker({
+        position: map.getCenter(),
+        draggable: true,
+        //cursor: 'move',
+    });
+    marker.setMap(map);
+    // 设置点标记的动画效果，此处为弹跳效果
+    marker.setAnimation('AMAP_ANIMATION_BOUNCE');
+    marker.setTitle('山东知特商务服务有限公司');
 };
